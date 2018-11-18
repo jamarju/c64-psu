@@ -281,7 +281,7 @@ F 1 "Conn_01x02" H 10280 3001 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10200 3100 50  0001 C CNN
 F 3 "" H 10200 3100 50  0001 C CNN
 F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
-F 5 "Aliexpress: \"KF301-5.0-2P\"" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Aliexpress: 'KF301-5.0-2P'" H 0   0   50  0001 C CNN "MfrCode"
 	1    10200 3100
 	1    0    0    1   
 $EndComp
@@ -296,7 +296,7 @@ F 1 "Conn_01x02" H 10180 1001 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10100 1100 50  0001 C CNN
 F 3 "" H 10100 1100 50  0001 C CNN
 F 4 "Any" H 7250 -3800 50  0001 C CNN "Mfr"
-F 5 "Aliexpress: \"KF301-5.0-2P\"" H 7250 -3800 50  0001 C CNN "MfrCode"
+F 5 "Aliexpress: 'KF301-5.0-2P'" H 7250 -3800 50  0001 C CNN "MfrCode"
 	1    10100 1100
 	1    0    0    -1  
 $EndComp
@@ -319,7 +319,7 @@ F 1 "Conn_01x02" H 1370 1266 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1450 1500 50  0001 C CNN
 F 3 "" H 1450 1500 50  0001 C CNN
 F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
-F 5 "Aliexpress: \"KF301-5.0-2P\"" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Aliexpress: 'KF301-5.0-2P'" H 0   0   50  0001 C CNN "MfrCode"
 	1    1450 1500
 	-1   0    0    1   
 $EndComp
@@ -842,7 +842,7 @@ F 1 "LED" V 3247 3683 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3300 3800 50  0001 C CNN
 F 3 "" H 3300 3800 50  0001 C CNN
 F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
-F 5 "Aliexpress: \"1206 white led\"" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Aliexpress: '1206 white led'" H 0   0   50  0001 C CNN "MfrCode"
 	1    3300 3800
 	0    -1   -1   0   
 $EndComp
