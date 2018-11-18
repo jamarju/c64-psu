@@ -35,7 +35,3 @@ Reference, Value, Footprint, Datasheet, Mfr, MfrCode, MouserCode, FarnellCode
 "XF2","Fuse Holder","","","Schurter","0031.8201","693-0031.8201",""
 "XF3","Fuse Holder","","","Schurter","0031.8201","693-0031.8201",""
 "D2","LED","LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder","","Any","Aliexpress: '1206 white led'","",""
-"MH1","MountingHole","MountingHole:MountingHole_3.2mm_M3",""
-"MH2","MountingHole","MountingHole:MountingHole_3.2mm_M3",""
-"MH3","MountingHole","MountingHole:MountingHole_3.2mm_M3",""
-"MH4","MountingHole","MountingHole:MountingHole_3.2mm_M3",""
