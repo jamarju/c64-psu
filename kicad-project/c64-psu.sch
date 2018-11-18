@@ -1,0 +1,920 @@
+EESchema Schematic File Version 4
+LIBS:c64-psu-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Fuse F1
+U 1 1 5B73FBF1
+P 1250 3300
+F 0 "F1" V 1053 3300 50  0000 C CNN
+F 1 "1.67A" V 1144 3300 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 1180 3300 50  0001 C CNN
+F 3 "" H 1250 3300 50  0001 C CNN
+F 4 "5ST 1.6-R" H -150 0   50  0001 C CNN "MfrCode"
+F 5 "Bel" H 0   0   50  0001 C CNN "Mfr"
+F 6 "530-5ST1.6-R" H 0   0   50  0001 C CNN "MouserCode"
+	1    1250 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F2
+U 1 1 5B73FC27
+P 9050 1700
+F 0 "F2" V 8853 1700 50  0000 C CNN
+F 1 "1.67A" V 8944 1700 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 8980 1700 50  0001 C CNN
+F 3 "" H 9050 1700 50  0001 C CNN
+F 4 "5ST 1.6-R" H 7250 -3800 50  0001 C CNN "MfrCode"
+F 5 "Bel" H 7250 -3800 50  0001 C CNN "Mfr"
+F 6 "530-5ST1.6-R" H 7250 -3800 50  0001 C CNN "MouserCode"
+	1    9050 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode_Bridge:KBU8B D1
+U 1 1 5B7468A0
+P 2400 3000
+F 0 "D1" H 2600 3300 50  0000 L CNN
+F 1 "KBU8B" H 2600 3200 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_KBU" H 2550 3125 50  0001 L CNN
+F 3 "" H 2400 3000 50  0001 C CNN
+F 4 "KBU8B" H -1650 100 50  0001 C CNN "MfrCode"
+F 5 "GeneSiC" H 0   0   50  0001 C CNN "Mfr"
+F 6 "905-KBU8B" H 0   0   50  0001 C CNN "MouserCode"
+	1    2400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3300 1100 3300
+Wire Wire Line
+	1600 3300 2400 3300
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5B94CF5C
+P 8650 3000
+F 0 "L1" H 8650 2950 50  0000 C CNN
+F 1 "10u" H 8650 3124 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1260" H 8650 3000 50  0001 C CNN
+F 3 "" H 8650 3000 50  0001 C CNN
+F 4 "SRR1260-100M" H 600 100 50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-SRR1260-100M" H 0   0   50  0001 C CNN "MouserCode"
+	1    8650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R Rfbt1
+U 1 1 5B94D007
+P 9050 3350
+F 0 "Rfbt1" H 9118 3396 50  0000 L CNN
+F 1 "100k" H 9118 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 3350 50  0001 C CNN
+F 3 "" H 9050 3350 50  0001 C CNN
+F 4 "CR0805-FX-1003ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805FX-1003ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    9050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP Cout1
+U 1 1 5B980B7C
+P 9350 3250
+F 0 "Cout1" H 9468 3296 50  0000 L CNN
+F 1 "68u" H 9468 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 9388 3100 50  0001 C CNN
+F 3 "" H 9350 3250 50  0001 C CNN
+F 4 "C3225X5R0J686M200AC" H 250 100 50  0001 C CNN "MfrCode"
+F 5 "TDK" H 0   0   50  0001 C CNN "Mfr"
+F 6 "810-C3225X5R0J686M" H 0   0   50  0001 C CNN "MouserCode"
+	1    9350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5B98138D
+P 2900 3400
+F 0 "C2" H 3018 3446 50  0000 L CNN
+F 1 "3300u" H 3018 3355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 2938 3250 50  0001 C CNN
+F 3 "" H 2900 3400 50  0001 C CNN
+F 4 "UHE1V332MHD6" H -1650 100 50  0001 C CNN "MfrCode"
+F 5 "Nichicon" H 0   0   50  0001 C CNN "Mfr"
+F 6 "647-UHE1V332MHD6" H 0   0   50  0001 C CNN "MouserCode"
+	1    2900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3000 2900 3250
+Wire Wire Line
+	2900 3550 2900 4300
+$Comp
+L lmr33630:LMR33630A U2
+U 1 1 5BB1258F
+P 7650 3300
+F 0 "U2" H 7625 3825 50  0000 C CNN
+F 1 "LMR33630A" H 7625 3734 50  0000 C CNN
+F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 7650 3300 50  0001 C CNN
+F 3 "" H 7650 3300 50  0001 C CNN
+F 4 "LMR33630ADDAR" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "595-LMR33630ADDAR" H 0   0   50  0001 C CNN "MouserCode"
+F 6 "TI" H 0   0   50  0001 C CNN "Mfr"
+	1    7650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C Cboot1
+U 1 1 5BB12D57
+P 8250 3150
+F 0 "Cboot1" V 7998 3150 50  0000 C CNN
+F 1 "100n" V 8089 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8288 3000 50  0001 C CNN
+F 3 "" H 8250 3150 50  0001 C CNN
+F 4 "CC0805KRX7R9BB104" H 950 -50 50  0001 C CNN "MfrCode"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Mfr"
+F 6 "603-CC805KRX7R9BB104" H 0   0   50  0001 C CNN "MouserCode"
+	1    8250 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:R Rfbb1
+U 1 1 5BB13066
+P 8800 3950
+F 0 "Rfbb1" H 8868 3996 50  0000 L CNN
+F 1 "22K" H 8868 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8800 3950 50  0001 C CNN
+F 3 "" H 8800 3950 50  0001 C CNN
+F 4 "CR0805-FX-2202ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805-FX2202ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    8800 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP Coutx1
+U 1 1 5BB130FD
+P 9700 3250
+F 0 "Coutx1" H 9818 3296 50  0000 L CNN
+F 1 "1u" H 9818 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9738 3100 50  0001 C CNN
+F 3 "" H 9700 3250 50  0001 C CNN
+F 4 "GRM21BR71A105KA01L" H 150 100 50  0001 C CNN "MfrCode"
+F 5 "Murata" H 0   0   50  0001 C CNN "Mfr"
+F 6 "81-GRM40X105K10L" H 0   0   50  0001 C CNN "MouserCode"
+	1    9700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5BB13412
+P 2900 4300
+F 0 "#PWR01" H 2900 4050 50  0001 C CNN
+F 1 "GND" H 2905 4127 50  0000 C CNN
+F 2 "" H 2900 4300 50  0001 C CNN
+F 3 "" H 2900 4300 50  0001 C CNN
+	1    2900 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 4300
+Wire Wire Line
+	8150 3300 8250 3300
+Wire Wire Line
+	8900 3000 9050 3000
+Wire Wire Line
+	9050 3000 9050 3100
+Wire Wire Line
+	9050 3000 9350 3000
+Wire Wire Line
+	9350 3000 9350 3100
+Connection ~ 9050 3000
+Wire Wire Line
+	9700 3000 9700 3100
+Connection ~ 9350 3000
+Wire Wire Line
+	9350 3400 9350 4300
+Connection ~ 9350 4300
+Wire Wire Line
+	9700 3400 9700 4300
+Wire Wire Line
+	9050 3600 9050 3650
+Wire Wire Line
+	8150 3600 8950 3600
+Wire Wire Line
+	8950 3600 8950 3650
+Wire Wire Line
+	8950 3650 9050 3650
+Connection ~ 9050 3650
+Wire Wire Line
+	7500 3750 7500 4300
+Connection ~ 7500 4300
+Wire Wire Line
+	7800 3750 7800 4300
+Connection ~ 7800 4300
+$Comp
+L Device:CP Cvcc1
+U 1 1 5BB156E8
+P 6900 3950
+F 0 "Cvcc1" H 7018 3996 50  0000 L CNN
+F 1 "1u" H 7018 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6938 3800 50  0001 C CNN
+F 3 "" H 6900 3950 50  0001 C CNN
+F 4 "C0805C105K8PACTU" H 1100 100 50  0001 C CNN "MfrCode"
+F 5 "KEMET" H 0   0   50  0001 C CNN "Mfr"
+F 6 "80-C0805C105K8P" H 0   0   50  0001 C CNN "MouserCode"
+	1    6900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3600 6900 3600
+Wire Wire Line
+	6900 3600 6900 3800
+Wire Wire Line
+	6900 4100 6900 4300
+Wire Wire Line
+	6900 4300 7500 4300
+$Comp
+L Device:CP Cin1
+U 1 1 5BB1942E
+P 6000 3150
+F 0 "Cin1" H 6118 3196 50  0000 L CNN
+F 1 "10u" H 6118 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6038 3000 50  0001 C CNN
+F 3 "" H 6000 3150 50  0001 C CNN
+F 4 "C3216X6S1V106K160AC" H 950 -150 50  0001 C CNN "MfrCode"
+F 5 "TDK" H 0   0   50  0001 C CNN "Mfr"
+F 6 "810-C3216X6S1V106K6A" H 0   0   50  0001 C CNN "MouserCode"
+	1    6000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP Cinx1
+U 1 1 5BB19466
+P 6350 3150
+F 0 "Cinx1" H 6468 3196 50  0000 L CNN
+F 1 "220n" H 6468 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6388 3000 50  0001 C CNN
+F 3 "" H 6350 3150 50  0001 C CNN
+F 4 "C0805C224K5RACTM" H 850 -150 50  0001 C CNN "MfrCode"
+F 5 "KEMET" H 0   0   50  0001 C CNN "Mfr"
+F 6 "80-C0805C224K5RACTM" H 0   0   50  0001 C CNN "MouserCode"
+	1    6350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5BB1E923
+P 10200 3100
+F 0 "J3" H 10280 3092 50  0000 L CNN
+F 1 "Conn_01x02" H 10280 3001 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10200 3100 50  0001 C CNN
+F 3 "" H 10200 3100 50  0001 C CNN
+F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
+F 5 "Aliexpress: \"KF301-5.0-2P\"" H 0   0   50  0001 C CNN "MfrCode"
+	1    10200 3100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10000 3100 10000 4300
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5BB20295
+P 10100 1100
+F 0 "J2" H 10180 1092 50  0000 L CNN
+F 1 "Conn_01x02" H 10180 1001 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10100 1100 50  0001 C CNN
+F 3 "" H 10100 1100 50  0001 C CNN
+F 4 "Any" H 7250 -3800 50  0001 C CNN "Mfr"
+F 5 "Aliexpress: \"KF301-5.0-2P\"" H 7250 -3800 50  0001 C CNN "MfrCode"
+	1    10100 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1100 9250 1100
+Wire Wire Line
+	9250 1100 9900 1100
+Text Notes 7350 7500 0    50   ~ 0
+C64 power supply based on LMR33630A SOIC switcher
+Text Notes 8150 7650 0    50   ~ 0
+2018\n
+Text Notes 10600 7650 0    50   ~ 0
+1\n
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5BB3A6F4
+P 1450 1500
+F 0 "J1" H 1370 1175 50  0000 C CNN
+F 1 "Conn_01x02" H 1370 1266 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1450 1500 50  0001 C CNN
+F 3 "" H 1450 1500 50  0001 C CNN
+F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
+F 5 "Aliexpress: \"KF301-5.0-2P\"" H 0   0   50  0001 C CNN "MfrCode"
+	1    1450 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1400 1850 1400
+Wire Wire Line
+	1850 1400 1850 1200
+Wire Wire Line
+	1850 1200 2000 1200
+Wire Wire Line
+	1650 1500 1850 1500
+Wire Wire Line
+	1850 1500 1850 1700
+Wire Wire Line
+	1850 1700 2400 1700
+$Comp
+L Device:Fuse F3
+U 1 1 5BB44055
+P 2150 1200
+F 0 "F3" V 1953 1200 50  0000 C CNN
+F 1 "160mA" V 2044 1200 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 2080 1200 50  0001 C CNN
+F 3 "" H 2150 1200 50  0001 C CNN
+F 4 "5ST 160-R" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bel" H 0   0   50  0001 C CNN "Mfr"
+F 6 "530-5ST160-R" H 0   0   50  0001 C CNN "MouserCode"
+	1    2150 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 1200 2400 1200
+$Comp
+L Device:Varistor RV3
+U 1 1 5BB46D21
+P 2850 1450
+F 0 "RV3" H 2900 1100 50  0000 L CNN
+F 1 "S14K300" H 2800 1150 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W5.2mm_P7.5mm" V 2780 1450 50  0001 C CNN
+F 3 "" H 2850 1450 50  0001 C CNN
+F 4 "B72214S301K101" H 100 0   50  0001 C CNN "MfrCode"
+F 5 "EPCOS / TDK" H 0   0   50  0001 C CNN "Mfr"
+F 6 "871-B72214S301K101" H 0   0   50  0001 C CNN "MouserCode"
+	1    2850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BB48429
+P 2400 1450
+F 0 "C1" H 2515 1496 50  0000 L CNN
+F 1 "10n" H 2515 1405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L19.0mm_W5.0mm_P15.00mm_MKS4" H 2438 1300 50  0001 C CNN
+F 3 "" H 2400 1450 50  0001 C CNN
+F 4 "R46KI21004001K1" H 2400 1450 50  0001 C CNN "MfrCode"
+F 5 "KEMET" H 0   0   50  0001 C CNN "Mfr"
+F 6 "80-R46KI21004001K1" H 0   0   50  0001 C CNN "MouserCode"
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1200 2400 1300
+Connection ~ 2400 1200
+Wire Wire Line
+	2400 1200 2850 1200
+Wire Wire Line
+	2400 1600 2400 1700
+Connection ~ 2400 1700
+Wire Wire Line
+	2400 1700 2850 1700
+Wire Wire Line
+	2850 1200 2850 1300
+Connection ~ 2850 1200
+Wire Wire Line
+	2850 1200 3350 1200
+Wire Wire Line
+	2850 1600 2850 1700
+Connection ~ 2850 1700
+Wire Wire Line
+	2850 1700 3350 1700
+NoConn ~ 7100 3300
+Wire Wire Line
+	8750 1700 8900 1700
+Wire Wire Line
+	9200 1700 9250 1700
+Wire Wire Line
+	9750 1700 9750 1200
+Wire Wire Line
+	9750 1200 9900 1200
+$Comp
+L Device:Varistor RV1
+U 1 1 5BB6D436
+P 1600 3000
+F 0 "RV1" H 1703 3046 50  0000 L CNN
+F 1 "S10K20" H 1703 2955 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D12mm_W4.5mm_P7.5mm" V 1530 3000 50  0001 C CNN
+F 3 "" H 1600 3000 50  0001 C CNN
+F 4 "B72210S200K101" H -150 0   50  0001 C CNN "MfrCode"
+F 5 "EPCOS / TDK" H 0   0   50  0001 C CNN "Mfr"
+F 6 "871-B72210S200K101" H 0   0   50  0001 C CNN "MouserCode"
+	1    1600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Varistor RV2
+U 1 1 5BB6D48B
+P 9250 1400
+F 0 "RV2" H 9353 1446 50  0000 L CNN
+F 1 "S10K20" H 9353 1355 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D12mm_W4.5mm_P7.5mm" V 9180 1400 50  0001 C CNN
+F 3 "" H 9250 1400 50  0001 C CNN
+F 4 "B72210S200K101" H 7250 -3800 50  0001 C CNN "MfrCode"
+F 5 "EPCOS / TDK" H 7250 -3800 50  0001 C CNN "Mfr"
+F 6 "871-B72210S200K101" H 7250 -3800 50  0001 C CNN "MouserCode"
+	1    9250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2700 1600 2850
+Connection ~ 1600 2700
+Wire Wire Line
+	1600 2700 2400 2700
+Wire Wire Line
+	1600 3150 1600 3300
+Connection ~ 1600 3300
+Wire Wire Line
+	9250 1100 9250 1250
+Connection ~ 9250 1100
+Wire Wire Line
+	9250 1550 9250 1700
+Connection ~ 9250 1700
+Wire Wire Line
+	9250 1700 9750 1700
+$Comp
+L Device:R_POT_TRIM TP1
+U 1 1 5BB8DDB2
+P 8400 3950
+F 0 "TP1" H 8330 3996 50  0000 R CNN
+F 1 "10K" H 8330 3905 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296Y_Vertical" H 8400 3950 50  0001 C CNN
+F 3 "" H 8400 3950 50  0001 C CNN
+F 4 "PV36Y103C01B00" H 1250 0   50  0001 C CNN "MfrCode"
+F 5 "81-PV36Y103C01B00" H 0   0   50  0001 C CNN "MouserCode"
+F 6 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+	1    8400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4100 8400 4300
+Connection ~ 8400 4300
+Wire Wire Line
+	8400 4300 9350 4300
+Wire Wire Line
+	9050 3650 9050 3950
+NoConn ~ 8400 3800
+$Comp
+L c64-psu:Myrra_UI_39_TRF TR1
+U 1 1 5BB94271
+P 3550 1500
+F 0 "TR1" H 3550 1982 50  0000 C CNN
+F 1 "Myrra_UI_39_TRF" H 3550 1891 50  0000 C CNN
+F 2 "c64-psu:Myrra UI 39 trf" H 3550 1500 50  0001 C CNN
+F 3 "" H 3550 1500 50  0001 C CNN
+F 4 "UI 39" H 250 0   50  0001 C CNN "MfrCode"
+F 5 "Myrra" H 3550 1500 50  0001 C CNN "Mfr"
+F 6 "" H 3550 1500 50  0001 C CNN "MouserCode"
+F 7 "1777965" H 3550 1500 50  0001 C CNN "FarnellCode"
+	1    3550 1500
+	1    0    0    -1  
+$EndComp
+Text Label 3350 1200 2    50   ~ 0
+PRI1A
+Text Label 3350 1400 2    50   ~ 0
+PRI1B
+Text Label 3350 1500 2    50   ~ 0
+PRI2A
+Text Label 3350 1700 2    50   ~ 0
+PRI2B
+Text Label 8750 1700 2    50   ~ 0
+SEC1A
+Text Label 8750 1100 2    50   ~ 0
+SEC1B
+Text Label 1000 3300 2    50   ~ 0
+SEC2A
+Text Label 1000 2700 2    50   ~ 0
+SEC2B
+Wire Wire Line
+	7800 4300 8400 4300
+Wire Wire Line
+	7500 4300 7800 4300
+$Comp
+L Device:R R1
+U 1 1 5BBC6632
+P 3800 3700
+F 0 "R1" H 3870 3746 50  0000 L CNN
+F 1 "820k" H 3870 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3730 3700 50  0001 C CNN
+F 3 "" H 3800 3700 50  0001 C CNN
+F 4 "CR0805-FX-8203ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805FX-8203ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    3800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BBCD8F2
+P 3800 4150
+F 0 "R2" H 3870 4196 50  0000 L CNN
+F 1 "68k" H 3870 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3730 4150 50  0001 C CNN
+F 3 "" H 3800 4150 50  0001 C CNN
+F 4 "CR0805-FX-6802ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805FX-6802ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    3800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4300 3800 4350
+Connection ~ 9700 3000
+Connection ~ 9700 4300
+Wire Wire Line
+	1000 2700 1600 2700
+Wire Wire Line
+	1400 3300 1600 3300
+Text Label 6700 3000 1    50   ~ 0
+VIN
+Text Label 9700 3000 1    50   ~ 0
+VOUT
+$Comp
+L c64-psu:MAX6399 U1
+U 1 1 5BD37A36
+P 4800 3750
+F 0 "U1" H 4350 4050 50  0000 C CNN
+F 1 "MAX6399" H 5150 3450 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm" H 4550 3700 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+F 4 "MAX6399ATA+T" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "700-MAX6399ATAT" H 0   0   50  0001 C CNN "MouserCode"
+F 6 "Maxim" H 0   0   50  0001 C CNN "Mfr"
+	1    4800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3000 4050 3600
+Wire Wire Line
+	4050 3600 4200 3600
+Connection ~ 4050 3000
+Wire Wire Line
+	4050 3000 4450 3000
+Wire Wire Line
+	4050 3600 4050 3700
+Wire Wire Line
+	4050 3700 4200 3700
+Connection ~ 4050 3600
+$Comp
+L power:GND #PWR02
+U 1 1 5BD4DABB
+P 3800 4350
+F 0 "#PWR02" H 3800 4100 50  0001 C CNN
+F 1 "GND" H 3805 4177 50  0000 C CNN
+F 2 "" H 3800 4350 50  0001 C CNN
+F 3 "" H 3800 4350 50  0001 C CNN
+	1    3800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5BD4DB0A
+P 4850 4100
+F 0 "#PWR03" H 4850 3850 50  0001 C CNN
+F 1 "GND" H 4855 3927 50  0000 C CNN
+F 2 "" H 4850 4100 50  0001 C CNN
+F 3 "" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5BD4DE67
+P 7500 4300
+F 0 "#PWR07" H 7500 4050 50  0001 C CNN
+F 1 "GND" H 7505 4127 50  0000 C CNN
+F 2 "" H 7500 4300 50  0001 C CNN
+F 3 "" H 7500 4300 50  0001 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BD4E0B4
+P 5550 3750
+F 0 "R3" H 5620 3796 50  0000 L CNN
+F 1 "680k" H 5620 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5480 3750 50  0001 C CNN
+F 3 "" H 5550 3750 50  0001 C CNN
+F 4 "CR0805-FX-6803ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805FX-6803ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Ren1
+U 1 1 5BD4E150
+P 6700 3150
+F 0 "Ren1" H 6630 3104 50  0000 R CNN
+F 1 "10k" H 6630 3195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6630 3150 50  0001 C CNN
+F 3 "" H 6700 3150 50  0001 C CNN
+F 4 "CR0805-FX-1002ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805FX-1002ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    6700 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 3300 4650 3400
+Wire Wire Line
+	4850 3000 5550 3000
+Connection ~ 5550 3000
+Wire Wire Line
+	5550 3000 6000 3000
+Wire Wire Line
+	4650 4100 4650 4600
+Wire Wire Line
+	8150 3000 8250 3000
+Connection ~ 8250 3000
+Wire Wire Line
+	8250 3000 8400 3000
+Wire Wire Line
+	9700 3000 10000 3000
+Wire Wire Line
+	9700 4300 10000 4300
+$Comp
+L Device:R R4
+U 1 1 5BD85416
+P 5550 4150
+F 0 "R4" H 5620 4196 50  0000 L CNN
+F 1 "150k" H 5620 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5480 4150 50  0001 C CNN
+F 3 "" H 5550 4150 50  0001 C CNN
+F 4 "CR0805-FX-1503ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805FX-1503ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    5550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3850 3800 3900
+Wire Wire Line
+	4200 3900 3800 3900
+Connection ~ 3800 3900
+Wire Wire Line
+	3800 3900 3800 4000
+Wire Wire Line
+	5400 3600 5550 3600
+Wire Wire Line
+	5400 3900 5550 3900
+Wire Wire Line
+	5550 3900 5550 4000
+Connection ~ 5550 3900
+$Comp
+L power:GND #PWR04
+U 1 1 5BDB756E
+P 5550 4300
+F 0 "#PWR04" H 5550 4050 50  0001 C CNN
+F 1 "GND" H 5555 4127 50  0000 C CNN
+F 2 "" H 5550 4300 50  0001 C CNN
+F 3 "" H 5550 4300 50  0001 C CNN
+	1    5550 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 3600
+Wire Wire Line
+	9050 3000 9050 2550
+Wire Wire Line
+	9050 2550 3800 2550
+Wire Wire Line
+	3800 2550 3800 3550
+Wire Wire Line
+	2900 3000 3300 3000
+Wire Wire Line
+	9350 4300 9700 4300
+Connection ~ 6000 3000
+Connection ~ 6350 3000
+Wire Wire Line
+	6000 3000 6350 3000
+Wire Wire Line
+	6350 3000 6700 3000
+Connection ~ 6700 3000
+Wire Wire Line
+	6700 3300 6950 3300
+Wire Wire Line
+	6950 3300 6950 3100
+Wire Wire Line
+	6950 3100 7100 3100
+Wire Wire Line
+	6700 3000 7100 3000
+Wire Wire Line
+	6700 4600 6700 3300
+Wire Wire Line
+	4650 4600 6700 4600
+Connection ~ 6700 3300
+$Comp
+L power:GND #PWR05
+U 1 1 5BDE946A
+P 6000 3300
+F 0 "#PWR05" H 6000 3050 50  0001 C CNN
+F 1 "GND" H 6005 3127 50  0000 C CNN
+F 2 "" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5BDE94B5
+P 6350 3300
+F 0 "#PWR06" H 6350 3050 50  0001 C CNN
+F 1 "GND" H 6355 3127 50  0000 C CNN
+F 2 "" H 6350 3300 50  0001 C CNN
+F 3 "" H 6350 3300 50  0001 C CNN
+	1    6350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BDF60AE
+P 3300 3400
+F 0 "R5" H 3370 3446 50  0000 L CNN
+F 1 "10k" H 3370 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3230 3400 50  0001 C CNN
+F 3 "" H 3300 3400 50  0001 C CNN
+F 4 "CR0805-FX-4700ELF" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Bourns" H 0   0   50  0001 C CNN "Mfr"
+F 6 "652-CR0805FX-4700ELF" H 0   0   50  0001 C CNN "MouserCode"
+	1    3300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4300 3300 4300
+Wire Wire Line
+	3300 3250 3300 3000
+Connection ~ 3300 3000
+Wire Wire Line
+	3300 3000 4050 3000
+$Comp
+L Device:Q_NMOS_SGD Q1
+U 1 1 5BE056ED
+P 4650 3100
+F 0 "Q1" V 4993 3100 50  0000 C CNN
+F 1 "N-MOS" V 4902 3100 50  0000 C CNN
+F 2 "c64-psu:LFPAK33-PSMN7R5-30MLD" H 4850 3200 50  0001 C CNN
+F 3 "" H 4650 3100 50  0001 C CNN
+F 4 "PSMN7R5-30MLD" H 0   0   50  0001 C CNN "MfrCode"
+F 5 "Nexperia" H 0   0   50  0001 C CNN "Mfr"
+F 6 "771-PSMN7R5-30MLDX" H 0   0   50  0001 C CNN "MouserCode"
+	1    4650 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 3000 9700 3000
+$Comp
+L Device:Fuse XF1
+U 1 1 5BE1772F
+P 4550 6550
+F 0 "XF1" H 4610 6596 50  0000 L CNN
+F 1 "Fuse Holder" H 4610 6505 50  0000 L CNN
+F 2 "" V 4480 6550 50  0001 C CNN
+F 3 "" H 4550 6550 50  0001 C CNN
+F 4 "Schurter" H -3000 5350 50  0001 C CNN "Mfr"
+F 5 "0031.8201" H -3000 5350 50  0001 C CNN "MfrCode"
+F 6 "693-0031.8201" H -3000 5350 50  0001 C CNN "MouserCode"
+	1    4550 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse XF2
+U 1 1 5BE177AD
+P 5900 6550
+F 0 "XF2" H 5960 6596 50  0000 L CNN
+F 1 "Fuse Holder" H 5960 6505 50  0000 L CNN
+F 2 "" V 5830 6550 50  0001 C CNN
+F 3 "" H 5900 6550 50  0001 C CNN
+F 4 "Schurter" H -2000 5350 50  0001 C CNN "Mfr"
+F 5 "0031.8201" H -2000 5350 50  0001 C CNN "MfrCode"
+F 6 "693-0031.8201" H -2000 5350 50  0001 C CNN "MouserCode"
+	1    5900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse XF3
+U 1 1 5BE178E0
+P 5250 6550
+F 0 "XF3" H 5310 6596 50  0000 L CNN
+F 1 "Fuse Holder" H 5310 6505 50  0000 L CNN
+F 2 "" V 5180 6550 50  0001 C CNN
+F 3 "" H 5250 6550 50  0001 C CNN
+F 4 "Schurter" H -3000 5350 50  0001 C CNN "Mfr"
+F 5 "0031.8201" H -3000 5350 50  0001 C CNN "MfrCode"
+F 6 "693-0031.8201" H -3000 5350 50  0001 C CNN "MouserCode"
+	1    5250 6550
+	1    0    0    -1  
+$EndComp
+Text Notes 4650 6800 0    50   ~ 0
+Fuse holders for the BOM\n
+Wire Wire Line
+	5550 3000 5550 3600
+Text Label 8250 3000 1    50   ~ 0
+SW
+Text Label 4050 3000 1    50   ~ 0
+Vd
+$Comp
+L Device:LED D2
+U 1 1 5BE3A48B
+P 3300 3800
+F 0 "D2" V 3338 3683 50  0000 R CNN
+F 1 "LED" V 3247 3683 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3300 3800 50  0001 C CNN
+F 3 "" H 3300 3800 50  0001 C CNN
+F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
+F 5 "Aliexpress: \"1206 white led\"" H 0   0   50  0001 C CNN "MfrCode"
+	1    3300 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 3550 3300 3650
+Wire Wire Line
+	3300 3950 3300 4300
+Wire Wire Line
+	3350 1400 3350 1500
+Wire Wire Line
+	2100 4300 2900 4300
+Connection ~ 2900 3000
+Wire Wire Line
+	2700 3000 2900 3000
+Wire Wire Line
+	2100 3000 2100 4300
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5BE4FF4C
+P 4550 7100
+F 0 "MH1" H 4650 7146 50  0000 L CNN
+F 1 "MountingHole" H 4650 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4550 7100 50  0001 C CNN
+F 3 "" H 4550 7100 50  0001 C CNN
+	1    4550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5BE500F2
+P 4550 7300
+F 0 "MH2" H 4650 7346 50  0000 L CNN
+F 1 "MountingHole" H 4650 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4550 7300 50  0001 C CNN
+F 3 "" H 4550 7300 50  0001 C CNN
+	1    4550 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5BE50161
+P 5500 7100
+F 0 "MH3" H 5600 7146 50  0000 L CNN
+F 1 "MountingHole" H 5600 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5500 7100 50  0001 C CNN
+F 3 "" H 5500 7100 50  0001 C CNN
+	1    5500 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5BE501CA
+P 5500 7300
+F 0 "MH4" H 5600 7346 50  0000 L CNN
+F 1 "MountingHole" H 5600 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5500 7300 50  0001 C CNN
+F 3 "" H 5500 7300 50  0001 C CNN
+	1    5500 7300
+	1    0    0    -1  
+$EndComp
+Text Label 3750 1200 0    50   ~ 0
+SEC1A
+Text Label 3750 1400 0    50   ~ 0
+SEC1B
+Text Label 3750 1500 0    50   ~ 0
+SEC2A
+Text Label 3750 1700 0    50   ~ 0
+SEC2B
+Text Notes 4650 7550 0    50   ~ 0
+Mech stuff
+Text Notes 9200 1900 0    50   ~ 0
+9VAC section
+Text Notes 5450 4850 0    50   ~ 0
+5VDC section
+$EndSCHEMATC

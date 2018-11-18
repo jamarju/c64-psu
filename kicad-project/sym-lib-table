@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name lmr33630)(type Legacy)(uri ${KIPRJMOD}/lib/lmr33630.lib)(options "")(descr ""))
+  (lib (name c64-psu)(type Legacy)(uri ${KIPRJMOD}/lib/c64-psu.lib)(options "")(descr ""))
+)
