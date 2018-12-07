@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x02
+# Connector_Generic_Conn_01x02
 #
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -20,11 +20,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -38,11 +38,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:CP
+# Device_CP
 #
-DEF Device:CP C 0 10 N Y 1 F N
+DEF Device_CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:CP" 25 -100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -61,11 +61,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Fuse
+# Device_Fuse
 #
-DEF Device:Fuse F 0 0 N Y 1 F N
+DEF Device_Fuse F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "Device:Fuse" -75 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -79,11 +79,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 N N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -102,11 +102,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_NMOS_SGD
+# Device_Q_NMOS_SGD
 #
-DEF Device:Q_NMOS_SGD Q 0 0 Y N 1 F N
+DEF Device_Q_NMOS_SGD Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_NMOS_SGD" 200 -50 50 H V L CNN
+F1 "Device_Q_NMOS_SGD" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -134,11 +134,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -151,11 +151,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_POT_TRIM
+# Device_R_POT_TRIM
 #
-DEF Device:R_POT_TRIM RV 0 40 Y N 1 F N
+DEF Device_R_POT_TRIM RV 0 40 Y N 1 F N
 F0 "RV" -175 0 50 V V C CNN
-F1 "Device:R_POT_TRIM" -100 0 50 V V C CNN
+F1 "Device_R_POT_TRIM" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -171,11 +171,11 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Varistor
+# Device_Varistor
 #
-DEF Device:Varistor RV 0 0 N Y 1 F N
+DEF Device_Varistor RV 0 0 N Y 1 F N
 F0 "RV" 125 0 50 V V C CNN
-F1 "Device:Varistor" -125 0 50 V V C CNN
+F1 "Device_Varistor" -125 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -191,11 +191,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diode_Bridge:KBU8B
+# Diode_Bridge_KBU8B
 #
-DEF Diode_Bridge:KBU8B D 0 0 Y Y 1 F N
+DEF Diode_Bridge_KBU8B D 0 0 Y Y 1 F N
 F0 "D" 100 275 50 H V L CNN
-F1 "Diode_Bridge:KBU8B" 100 200 50 H V L CNN
+F1 "Diode_Bridge_KBU8B" 100 200 50 H V L CNN
 F2 "Diode_THT:Diode_Bridge_Vishay_KBU" 150 125 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS KBU4B KBU4D KBU4G KBU4J KBU4K KBU4M KBU8A KBU8B KBU8D KBU8G KBU8J KBU8K KBU8M KBU6A KBU6B KBU6D KBU6G KBU6J KBU6K KBU6M
@@ -219,11 +219,11 @@ X - 4 -300 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Mechanical:MountingHole
+# Mechanical_MountingHole
 #
-DEF Mechanical:MountingHole MH 0 40 Y Y 1 F N
-F0 "MH" 0 200 50 H V C CNN
-F1 "Mechanical:MountingHole" 0 125 50 H V C CNN
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -234,11 +234,11 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# c64-psu:MAX6399
+# c64-psu_MAX6399
 #
-DEF c64-psu:MAX6399 U 0 40 Y Y 1 F N
+DEF c64-psu_MAX6399 U 0 40 Y Y 1 F N
 F0 "U" -450 300 50 H V C CNN
-F1 "c64-psu:MAX6399" 350 -300 50 H V C CNN
+F1 "c64-psu_MAX6399" 350 -300 50 H V C CNN
 F2 "" -250 -50 50 H I C CNN
 F3 "" -250 -50 50 H I C CNN
 DRAW
@@ -254,11 +254,11 @@ X OUT_SET 8 600 -150 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# c64-psu:Myrra_UI_39_TRF
+# c64-psu_Myrra_UI_39_TRF
 #
-DEF c64-psu:Myrra_UI_39_TRF TR 0 0 N Y 1 F N
+DEF c64-psu_Myrra_UI_39_TRF TR 0 0 N Y 1 F N
 F0 "TR" 0 400 50 H V C CNN
-F1 "c64-psu:Myrra_UI_39_TRF" 0 -300 50 H V C CNN
+F1 "c64-psu_Myrra_UI_39_TRF" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -298,11 +298,11 @@ X ~ 9 -200 -200 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# lmr33630:LMR33630A
+# lmr33630_LMR33630A
 #
-DEF lmr33630:LMR33630A U 0 40 Y Y 1 F N
+DEF lmr33630_LMR33630A U 0 40 Y Y 1 F N
 F0 "U" 0 -400 50 H V C CNN
-F1 "lmr33630:LMR33630A" 0 400 50 H V C CNN
+F1 "lmr33630_LMR33630A" 0 400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -319,11 +319,11 @@ X AGND 9 150 -450 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -332,11 +332,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pspice:INDUCTOR
+# pspice_INDUCTOR
 #
-DEF pspice:INDUCTOR L 0 0 N Y 1 F N
+DEF pspice_INDUCTOR L 0 0 N Y 1 F N
 F0 "L" 0 100 50 H V C CNN
-F1 "pspice:INDUCTOR" 0 -50 50 H V C CNN
+F1 "pspice_INDUCTOR" 0 -50 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -349,11 +349,11 @@ X 2 2 250 0 50 L 30 30 1 1 I
 ENDDRAW
 ENDDEF
 #
-# pspice:R
+# pspice_R
 #
-DEF pspice:R R 0 0 N Y 1 F N
+DEF pspice_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "pspice:R" 0 0 50 V V C CNN
+F1 "pspice_R" 0 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

@@ -275,18 +275,16 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5BB1E923
-P 10200 3100
-F 0 "J3" H 10280 3092 50  0000 L CNN
-F 1 "Conn_01x02" H 10280 3001 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10200 3100 50  0001 C CNN
-F 3 "" H 10200 3100 50  0001 C CNN
-F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
-F 5 "Aliexpress: 'KF301-5.0-2P'" H 0   0   50  0001 C CNN "MfrCode"
-	1    10200 3100
-	1    0    0    1   
+P 10200 3000
+F 0 "J3" H 10280 2992 50  0000 L CNN
+F 1 "Conn_01x02" H 10280 2901 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10200 3000 50  0001 C CNN
+F 3 "" H 10200 3000 50  0001 C CNN
+F 4 "Any" H 0   -100 50  0001 C CNN "Mfr"
+F 5 "Aliexpress: 'KF301-5.0-2P'" H 0   -100 50  0001 C CNN "MfrCode"
+	1    10200 3000
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 3100 10000 4300
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5BB20295
@@ -393,12 +391,9 @@ Wire Wire Line
 	2850 1200 2850 1300
 Connection ~ 2850 1200
 Wire Wire Line
-	2850 1200 3350 1200
+	2850 1200 3900 1200
 Wire Wire Line
 	2850 1600 2850 1700
-Connection ~ 2850 1700
-Wire Wire Line
-	2850 1700 3350 1700
 NoConn ~ 7100 3300
 Wire Wire Line
 	8750 1700 8900 1700
@@ -477,25 +472,25 @@ NoConn ~ 8400 3800
 $Comp
 L c64-psu:Myrra_UI_39_TRF TR1
 U 1 1 5BB94271
-P 3550 1500
-F 0 "TR1" H 3550 1982 50  0000 C CNN
-F 1 "Myrra_UI_39_TRF" H 3550 1891 50  0000 C CNN
-F 2 "c64-psu:Myrra UI 39 trf" H 3550 1500 50  0001 C CNN
-F 3 "" H 3550 1500 50  0001 C CNN
-F 4 "UI 39" H 250 0   50  0001 C CNN "MfrCode"
-F 5 "Myrra" H 3550 1500 50  0001 C CNN "Mfr"
-F 6 "" H 3550 1500 50  0001 C CNN "MouserCode"
-F 7 "1777965" H 3550 1500 50  0001 C CNN "FarnellCode"
-	1    3550 1500
+P 4100 1500
+F 0 "TR1" H 4100 1982 50  0000 C CNN
+F 1 "Myrra_UI_39_TRF" H 4100 1891 50  0000 C CNN
+F 2 "c64-psu:Myrra UI 39 trf" H 4100 1500 50  0001 C CNN
+F 3 "" H 4100 1500 50  0001 C CNN
+F 4 "UI 39" H 800 0   50  0001 C CNN "MfrCode"
+F 5 "Myrra" H 4100 1500 50  0001 C CNN "Mfr"
+F 6 "" H 4100 1500 50  0001 C CNN "MouserCode"
+F 7 "1777965" H 4100 1500 50  0001 C CNN "FarnellCode"
+	1    4100 1500
 	1    0    0    -1  
 $EndComp
-Text Label 3350 1200 2    50   ~ 0
+Text Label 3900 1200 2    50   ~ 0
 PRI1A
-Text Label 3350 1400 2    50   ~ 0
+Text Label 3900 1400 2    50   ~ 0
 PRI1B
-Text Label 3350 1500 2    50   ~ 0
+Text Label 3900 1500 2    50   ~ 0
 PRI2A
-Text Label 3350 1700 2    50   ~ 0
+Text Label 3900 1700 2    50   ~ 0
 PRI2B
 Text Label 8750 1700 2    50   ~ 0
 SEC1A
@@ -851,8 +846,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 3950 3300 4300
 Wire Wire Line
-	3350 1400 3350 1500
-Wire Wire Line
 	2100 4300 2900 4300
 Connection ~ 2900 3000
 Wire Wire Line
@@ -903,13 +896,13 @@ F 3 "" H 5500 7300 50  0001 C CNN
 	1    5500 7300
 	1    0    0    -1  
 $EndComp
-Text Label 3750 1200 0    50   ~ 0
+Text Label 4300 1200 0    50   ~ 0
 SEC1A
-Text Label 3750 1400 0    50   ~ 0
+Text Label 4300 1400 0    50   ~ 0
 SEC1B
-Text Label 3750 1500 0    50   ~ 0
+Text Label 4300 1500 0    50   ~ 0
 SEC2A
-Text Label 3750 1700 0    50   ~ 0
+Text Label 4300 1700 0    50   ~ 0
 SEC2B
 Text Notes 4650 7550 0    50   ~ 0
 Mech stuff
@@ -917,4 +910,21 @@ Text Notes 9200 1900 0    50   ~ 0
 9VAC section
 Text Notes 5450 4850 0    50   ~ 0
 5VDC section
+Wire Wire Line
+	2850 1700 3350 1700
+Wire Wire Line
+	3350 1700 3350 1500
+Wire Wire Line
+	3350 1500 3900 1500
+Connection ~ 2850 1700
+Wire Wire Line
+	3900 1400 3650 1400
+Wire Wire Line
+	3650 1400 3650 1700
+Wire Wire Line
+	3650 1700 3900 1700
+Wire Wire Line
+	10000 3100 10000 4300
+Text Notes 2150 5250 0    50   ~ 0
+Switcher feedback Vth = 1V (4.13 < VOUT < 5.55)\nMAX6399 overvoltage feedback (SET) Vth = 0.5V (VOUT > 6.53)\nMAX6399 undervoltage feedback (OUT SET) Vth = 1.23V (VIN < 6.81)
 $EndSCHEMATC
