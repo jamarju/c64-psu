@@ -29,7 +29,7 @@ Reference, Value, Footprint, Datasheet, Mfr, MfrCode, MouserCode, FarnellCode
 "R3","680k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","","Bourns","CR0805-FX-6803ELF","652-CR0805FX-6803ELF",""
 "Ren1","10k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","","Bourns","CR0805-FX-1002ELF","652-CR0805FX-1002ELF",""
 "R4","150k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","","Bourns","CR0805-FX-1503ELF","652-CR0805FX-1503ELF",""
-"R5","10k","Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder","","Bourns","CR0805-FX-4700ELF","652-CR0805FX-4700ELF",""
+"R5","4K7","Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder","","Bourns","CR1206-FX-4701ELF","652-CR1206FX-4701ELF",""
 "Q1","N-MOS","c64-psu:LFPAK33-PSMN7R5-30MLD","","Nexperia","PSMN7R5-30MLD","771-PSMN7R5-30MLDX",""
 "XF1","Fuse Holder","","","Schurter","0031.8201","693-0031.8201",""
 "XF2","Fuse Holder","","","Schurter","0031.8201","693-0031.8201",""
