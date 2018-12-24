@@ -54,7 +54,7 @@ F 4 "KBU8B" H -1650 100 50  0001 C CNN "MfrCode"
 F 5 "GeneSiC" H 0   0   50  0001 C CNN "Mfr"
 F 6 "905-KBU8B" H 0   0   50  0001 C CNN "MouserCode"
 	1    2400 3000
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	1000 3300 1100 3300
@@ -165,26 +165,15 @@ $EndComp
 $Comp
 L Device:CP Coutx1
 U 1 1 5BB130FD
-P 9700 3250
-F 0 "Coutx1" H 9818 3296 50  0000 L CNN
-F 1 "1u" H 9818 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9738 3100 50  0001 C CNN
-F 3 "" H 9700 3250 50  0001 C CNN
-F 4 "GRM21BR71A105KA01L" H 150 100 50  0001 C CNN "MfrCode"
-F 5 "Murata" H 0   0   50  0001 C CNN "Mfr"
-F 6 "81-GRM40X105K10L" H 0   0   50  0001 C CNN "MouserCode"
-	1    9700 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5BB13412
-P 2900 4300
-F 0 "#PWR01" H 2900 4050 50  0001 C CNN
-F 1 "GND" H 2905 4127 50  0000 C CNN
-F 2 "" H 2900 4300 50  0001 C CNN
-F 3 "" H 2900 4300 50  0001 C CNN
-	1    2900 4300
+P 9850 3250
+F 0 "Coutx1" H 9968 3296 50  0000 L CNN
+F 1 "1u" H 9968 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9888 3100 50  0001 C CNN
+F 3 "" H 9850 3250 50  0001 C CNN
+F 4 "GRM21BR71A105KA01L" H 300 100 50  0001 C CNN "MfrCode"
+F 5 "Murata" H 150 0   50  0001 C CNN "Mfr"
+F 6 "81-GRM40X105K10L" H 150 0   50  0001 C CNN "MouserCode"
+	1    9850 3250
 	1    0    0    -1  
 $EndComp
 Connection ~ 2900 4300
@@ -200,13 +189,12 @@ Wire Wire Line
 	9350 3000 9350 3100
 Connection ~ 9050 3000
 Wire Wire Line
-	9700 3000 9700 3100
+	9850 3000 9850 3100
 Connection ~ 9350 3000
 Wire Wire Line
 	9350 3400 9350 4300
-Connection ~ 9350 4300
 Wire Wire Line
-	9700 3400 9700 4300
+	9850 3400 9850 4300
 Wire Wire Line
 	9050 3600 9050 3650
 Wire Wire Line
@@ -216,9 +204,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 3650 9050 3650
 Connection ~ 9050 3650
-Wire Wire Line
-	7500 3750 7500 4300
-Connection ~ 7500 4300
 Wire Wire Line
 	7800 3750 7800 4300
 Connection ~ 7800 4300
@@ -242,8 +227,6 @@ Wire Wire Line
 	6900 3600 6900 3800
 Wire Wire Line
 	6900 4100 6900 4300
-Wire Wire Line
-	6900 4300 7500 4300
 $Comp
 L Device:CP Cin1
 U 1 1 5BB1942E
@@ -272,36 +255,8 @@ F 6 "80-C0805C224K5RACTM" H 0   0   50  0001 C CNN "MouserCode"
 	1    6350 3150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5BB1E923
-P 10200 3000
-F 0 "J3" H 10280 2992 50  0000 L CNN
-F 1 "Conn_01x02" H 10280 2901 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10200 3000 50  0001 C CNN
-F 3 "" H 10200 3000 50  0001 C CNN
-F 4 "Any" H 0   -100 50  0001 C CNN "Mfr"
-F 5 "Aliexpress: 'KF301-5.0-2P'" H 0   -100 50  0001 C CNN "MfrCode"
-	1    10200 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5BB20295
-P 10100 1100
-F 0 "J2" H 10180 1092 50  0000 L CNN
-F 1 "Conn_01x02" H 10180 1001 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10100 1100 50  0001 C CNN
-F 3 "" H 10100 1100 50  0001 C CNN
-F 4 "Any" H 7250 -3800 50  0001 C CNN "Mfr"
-F 5 "Aliexpress: 'KF301-5.0-2P'" H 7250 -3800 50  0001 C CNN "MfrCode"
-	1    10100 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8750 1100 9250 1100
-Wire Wire Line
-	9250 1100 9900 1100
 Text Notes 7350 7500 0    50   ~ 0
 C64 power supply based on LMR33630A SOIC switcher
 Text Notes 8150 7650 0    50   ~ 0
@@ -314,7 +269,7 @@ U 1 1 5BB3A6F4
 P 1450 1500
 F 0 "J1" H 1370 1175 50  0000 C CNN
 F 1 "Conn_01x02" H 1370 1266 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1450 1500 50  0001 C CNN
+F 2 "c64-psu:KF7.62_2P" H 1450 1500 50  0001 C CNN
 F 3 "" H 1450 1500 50  0001 C CNN
 F 4 "Any" H 0   0   50  0001 C CNN "Mfr"
 F 5 "Aliexpress: 'KF301-5.0-2P'" H 0   0   50  0001 C CNN "MfrCode"
@@ -399,10 +354,6 @@ Wire Wire Line
 	8750 1700 8900 1700
 Wire Wire Line
 	9200 1700 9250 1700
-Wire Wire Line
-	9750 1700 9750 1200
-Wire Wire Line
-	9750 1200 9900 1200
 $Comp
 L Device:Varistor RV1
 U 1 1 5BB6D436
@@ -441,12 +392,11 @@ Wire Wire Line
 Connection ~ 1600 3300
 Wire Wire Line
 	9250 1100 9250 1250
-Connection ~ 9250 1100
 Wire Wire Line
 	9250 1550 9250 1700
 Connection ~ 9250 1700
 Wire Wire Line
-	9250 1700 9750 1700
+	9250 1700 10300 1700
 $Comp
 L Device:R_POT_TRIM TP1
 U 1 1 5BB8DDB2
@@ -463,9 +413,6 @@ F 6 "Bourns" H 0   0   50  0001 C CNN "Mfr"
 $EndComp
 Wire Wire Line
 	8400 4100 8400 4300
-Connection ~ 8400 4300
-Wire Wire Line
-	8400 4300 9350 4300
 Wire Wire Line
 	9050 3650 9050 3950
 NoConn ~ 8400 3800
@@ -502,8 +449,6 @@ Text Label 1000 2700 2    50   ~ 0
 SEC2B
 Wire Wire Line
 	7800 4300 8400 4300
-Wire Wire Line
-	7500 4300 7800 4300
 $Comp
 L Device:R R1
 U 1 1 5BBC6632
@@ -534,15 +479,13 @@ F 6 "652-CR0805FX-6802ELF" H 0   0   50  0001 C CNN "MouserCode"
 $EndComp
 Wire Wire Line
 	3800 4300 3800 4350
-Connection ~ 9700 3000
-Connection ~ 9700 4300
 Wire Wire Line
 	1000 2700 1600 2700
 Wire Wire Line
 	1400 3300 1600 3300
 Text Label 6700 3000 1    50   ~ 0
 VIN
-Text Label 9700 3000 1    50   ~ 0
+Text Label 9850 3000 1    50   ~ 0
 VOUT
 $Comp
 L c64-psu:MAX6399 U1
@@ -595,12 +538,12 @@ $EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5BD4DE67
-P 7500 4300
-F 0 "#PWR07" H 7500 4050 50  0001 C CNN
-F 1 "GND" H 7505 4127 50  0000 C CNN
-F 2 "" H 7500 4300 50  0001 C CNN
-F 3 "" H 7500 4300 50  0001 C CNN
-	1    7500 4300
+P 7800 4300
+F 0 "#PWR07" H 7800 4050 50  0001 C CNN
+F 1 "GND" H 7805 4127 50  0000 C CNN
+F 2 "" H 7800 4300 50  0001 C CNN
+F 3 "" H 7800 4300 50  0001 C CNN
+	1    7800 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -645,10 +588,6 @@ Wire Wire Line
 Connection ~ 8250 3000
 Wire Wire Line
 	8250 3000 8400 3000
-Wire Wire Line
-	9700 3000 10000 3000
-Wire Wire Line
-	9700 4300 10000 4300
 $Comp
 L Device:R R4
 U 1 1 5BD85416
@@ -698,7 +637,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 3000 3300 3000
 Wire Wire Line
-	9350 4300 9700 4300
+	9350 4300 9850 4300
 Connection ~ 6000 3000
 Connection ~ 6350 3000
 Wire Wire Line
@@ -720,28 +659,6 @@ Wire Wire Line
 	4650 4600 6700 4600
 Connection ~ 6700 3300
 $Comp
-L power:GND #PWR05
-U 1 1 5BDE946A
-P 6000 3300
-F 0 "#PWR05" H 6000 3050 50  0001 C CNN
-F 1 "GND" H 6005 3127 50  0000 C CNN
-F 2 "" H 6000 3300 50  0001 C CNN
-F 3 "" H 6000 3300 50  0001 C CNN
-	1    6000 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5BDE94B5
-P 6350 3300
-F 0 "#PWR06" H 6350 3050 50  0001 C CNN
-F 1 "GND" H 6355 3127 50  0000 C CNN
-F 2 "" H 6350 3300 50  0001 C CNN
-F 3 "" H 6350 3300 50  0001 C CNN
-	1    6350 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R5
 U 1 1 5BDF60AE
 P 3300 3400
@@ -755,8 +672,6 @@ F 6 "652-CR1206FX-4701ELF" H 0   0   50  0001 C CNN "MouserCode"
 	1    3300 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 4300 3300 4300
 Wire Wire Line
 	3300 3250 3300 3000
 Connection ~ 3300 3000
@@ -777,7 +692,7 @@ F 6 "771-PSMN7R5-30MLDX" H 0   0   50  0001 C CNN "MouserCode"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9350 3000 9700 3000
+	9350 3000 9850 3000
 $Comp
 L Device:Fuse XF1
 U 1 1 5BE1772F
@@ -923,8 +838,128 @@ Wire Wire Line
 	3650 1400 3650 1700
 Wire Wire Line
 	3650 1700 3900 1700
-Wire Wire Line
-	10000 3100 10000 4300
 Text Notes 2150 5250 0    50   ~ 0
 Switcher feedback Vth = 1V (4.13 < VOUT < 5.55)\nMAX6399 overvoltage feedback (SET) Vth = 0.5V (VOUT > 6.53)\nMAX6399 undervoltage feedback (OUT SET) Vth = 1.23V (VIN < 6.81)
+$Comp
+L power:GNDPWR #PWR0101
+U 1 1 5C1FF3CA
+P 7500 4300
+F 0 "#PWR0101" H 7500 4100 50  0001 C CNN
+F 1 "GNDPWR" H 7504 4146 50  0000 C CNN
+F 2 "" H 7500 4250 50  0001 C CNN
+F 3 "" H 7500 4250 50  0001 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 5C1FFDC4
+P 7650 4300
+F 0 "NT1" H 7650 4478 50  0000 C CNN
+F 1 "Net-Tie_2" H 7650 4387 50  0000 C CNN
+F 2 "NetTie:NetTie-2_THT_Pad1.0mm" H 7650 4300 50  0001 C CNN
+F 3 "~" H 7650 4300 50  0001 C CNN
+	1    7650 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3750 7500 4300
+$Comp
+L power:GND #PWR0102
+U 1 1 5C209985
+P 6900 4300
+F 0 "#PWR0102" H 6900 4050 50  0001 C CNN
+F 1 "GND" H 6905 4127 50  0000 C CNN
+F 2 "" H 6900 4300 50  0001 C CNN
+F 3 "" H 6900 4300 50  0001 C CNN
+	1    6900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4300 7500 4300
+Connection ~ 7500 4300
+Wire Wire Line
+	7750 4300 7800 4300
+$Comp
+L power:GNDPWR #PWR0103
+U 1 1 5C214F36
+P 2900 4300
+F 0 "#PWR0103" H 2900 4100 50  0001 C CNN
+F 1 "GNDPWR" H 2904 4146 50  0000 C CNN
+F 2 "" H 2900 4250 50  0001 C CNN
+F 3 "" H 2900 4250 50  0001 C CNN
+	1    2900 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 4300
+Connection ~ 8400 4300
+Wire Wire Line
+	8400 4300 9350 4300
+$Comp
+L power:GNDPWR #PWR0104
+U 1 1 5C216998
+P 6000 3300
+F 0 "#PWR0104" H 6000 3100 50  0001 C CNN
+F 1 "GNDPWR" H 6004 3146 50  0000 C CNN
+F 2 "" H 6000 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0001 C CNN
+	1    6000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 5C2171CE
+P 6350 3300
+F 0 "#PWR0105" H 6350 3100 50  0001 C CNN
+F 1 "GNDPWR" H 6354 3146 50  0000 C CNN
+F 2 "" H 6350 3250 50  0001 C CNN
+F 3 "" H 6350 3250 50  0001 C CNN
+	1    6350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C218F35
+P 3300 4300
+F 0 "#PWR0106" H 3300 4050 50  0001 C CNN
+F 1 "GND" H 3305 4127 50  0000 C CNN
+F 2 "" H 3300 4300 50  0001 C CNN
+F 3 "" H 3300 4300 50  0001 C CNN
+	1    3300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5C21D271
+P 10650 2900
+F 0 "J2" H 10730 2892 50  0000 L CNN
+F 1 "Conn_01x04" H 10730 2801 50  0000 L CNN
+F 2 "c64-psu:KF7.62_4P" H 10650 2900 50  0001 C CNN
+F 3 "~" H 10650 2900 50  0001 C CNN
+	1    10650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 1700 10300 2900
+Wire Wire Line
+	10300 2900 10450 2900
+Wire Wire Line
+	9250 1100 10450 1100
+Wire Wire Line
+	10450 1100 10450 2800
+Connection ~ 9250 1100
+Wire Wire Line
+	9850 4300 10300 4300
+Wire Wire Line
+	10300 4300 10300 3000
+Wire Wire Line
+	10300 3000 10450 3000
+Connection ~ 9850 4300
+Wire Wire Line
+	10450 3100 10100 3100
+Wire Wire Line
+	10100 3100 10100 3000
+Wire Wire Line
+	10100 3000 9850 3000
+Connection ~ 9850 3000
 $EndSCHEMATC
