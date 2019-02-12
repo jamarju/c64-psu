@@ -1,16 +1,14 @@
 # C64 power supply unit
 
-**Warning: WORK IN PROGRESS. BUILD AT YOUR OWN RISK**
-
 ![pcb view](img/psu01.jpeg)
 
 This is a compact and efficient 9VAC/5VDC power supply for the Commodore 64 with the following features:
 
-* 220VAC input (sorry 110VAC countries, but read below).
-* 5 VDC output, adjustable, 2A max.
+* 220VAC input (but easy to modify for 110VAC operation).
+* 5 VDC output, adjustable, 1.75A max.
 * 9 VAC output, 1.67A max.
-* 6.5 VDC overvoltage protection (latching).
-* Low VDC output ripple (<20 mV<sub>pp</sub> @2A).
+* >6.5 VDC overvoltage protection (latching).
+* Low VDC output ripple (<25 mV<sub>pp</sub> @1A).
 * 2A overcurrent protection.
 * Low heat dissipation.
 * Mains overvoltage and noise suppresion.
@@ -48,16 +46,9 @@ To work at 110 VAC, do these modifications to the schematic:
 
 Test conditions: V<sub>out</sub>=5.1V, I<sub>out</sub>=1A.
 
-* High frequency ripple: 79mV<sub>pp</sub>
 * Low frequency ripple: <20mV<sub>pp</sub>
 
 ![](img/LF_and_HF_ripple.png)
-
-### High frequency ringing
-
-Test conditions: V<sub>out</sub>=5.1V, I<sub>out</sub>=1A.
-
-![](img/HF_ringing.png)
 
 ### Overvoltage protection
 
@@ -91,8 +82,6 @@ Undervoltage protection voltage threshold set at Vin <= 6.81V via R3/R4 divider.
 
 ## TODO
 
-* Improve HF output noise
-* Case + strain relief models for 3D printing
 * Actually test that this doesn't blow anything up. Tests should include at least:
   * Thermal behavior
   * Undervoltage POK (both edges)
