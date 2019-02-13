@@ -812,7 +812,7 @@ P 7200 4300
 F 0 "NT1" H 7200 4350 50  0000 C CNN
 F 1 "Net-Tie_2" V 7200 4650 50  0000 C CNN
 F 2 "NetTie:NetTie-2_THT_Pad1.0mm" H 7200 4300 50  0001 C CNN
-F 3 "~" H 7200 4300 50  0001 C CNN
+F 3 "" H 7200 4300 50  0001 C CNN
 	1    7200 4300
 	1    0    0    -1  
 $EndComp
@@ -918,7 +918,7 @@ P 10100 3750
 F 0 "TP3" V 10054 3808 50  0000 L CNN
 F 1 "TestPoint_2Pole" V 10145 3808 50  0000 L CNN
 F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 10100 3750 50  0001 C CNN
-F 3 "~" H 10100 3750 50  0001 C CNN
+F 3 "" H 10100 3750 50  0001 C CNN
 	1    10100 3750
 	0    1    1    0   
 $EndComp
@@ -986,7 +986,7 @@ P 10050 1400
 F 0 "TP1" V 10004 1458 50  0000 L CNN
 F 1 "TestPoint_2Pole" V 10095 1458 50  0000 L CNN
 F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 10050 1400 50  0001 C CNN
-F 3 "~" H 10050 1400 50  0001 C CNN
+F 3 "" H 10050 1400 50  0001 C CNN
 	1    10050 1400
 	0    1    1    0   
 $EndComp
@@ -1004,7 +1004,7 @@ P 3400 3650
 F 0 "TP2" H 3150 3700 50  0000 L CNN
 F 1 "TestPoint_2Pole" H 3550 3700 50  0000 L CNN
 F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3400 3650 50  0001 C CNN
-F 3 "~" H 3400 3650 50  0001 C CNN
+F 3 "" H 3400 3650 50  0001 C CNN
 	1    3400 3650
 	0    1    1    0   
 $EndComp
@@ -1033,7 +1033,10 @@ P 10500 3000
 F 0 "J5" H 10580 3042 50  0000 L CNN
 F 1 "Conn_01x01" H 10580 2951 50  0000 L CNN
 F 2 "c64-psu:spade_4.8mm" H 10500 3000 50  0001 C CNN
-F 3 "~" H 10500 3000 50  0001 C CNN
+F 3 "" H 10500 3000 50  0001 C CNN
+F 4 "Keystone" H 0   0   50  0001 C CNN "Mfr"
+F 5 "1212-ST" H 0   0   50  0001 C CNN "MfrCode"
+F 6 "534-1212-ST" H 0   0   50  0001 C CNN "MouserCode"
 	1    10500 3000
 	1    0    0    -1  
 $EndComp
@@ -1049,7 +1052,10 @@ P 10500 4300
 F 0 "J6" H 10580 4342 50  0000 L CNN
 F 1 "Conn_01x01" H 10580 4251 50  0000 L CNN
 F 2 "c64-psu:spade_4.8mm" H 10500 4300 50  0001 C CNN
-F 3 "~" H 10500 4300 50  0001 C CNN
+F 3 "" H 10500 4300 50  0001 C CNN
+F 4 "Keystone" H 0   0   50  0001 C CNN "Mfr"
+F 5 "1212-ST" H 0   0   50  0001 C CNN "MfrCode"
+F 6 "534-1212-ST" H 0   0   50  0001 C CNN "MouserCode"
 	1    10500 4300
 	1    0    0    -1  
 $EndComp
@@ -1060,7 +1066,10 @@ P 10500 1700
 F 0 "J4" H 10580 1742 50  0000 L CNN
 F 1 "Conn_01x01" H 10580 1651 50  0000 L CNN
 F 2 "c64-psu:spade_4.8mm" H 10500 1700 50  0001 C CNN
-F 3 "~" H 10500 1700 50  0001 C CNN
+F 3 "" H 10500 1700 50  0001 C CNN
+F 4 "Keystone" H 0   0   50  0001 C CNN "Mfr"
+F 5 "1212-ST" H 0   0   50  0001 C CNN "MfrCode"
+F 6 "534-1212-ST" H 0   0   50  0001 C CNN "MouserCode"
 	1    10500 1700
 	1    0    0    -1  
 $EndComp
@@ -1071,7 +1080,10 @@ P 10500 1100
 F 0 "J1" H 10580 1142 50  0000 L CNN
 F 1 "Conn_01x01" H 10580 1051 50  0000 L CNN
 F 2 "c64-psu:spade_4.8mm" H 10500 1100 50  0001 C CNN
-F 3 "~" H 10500 1100 50  0001 C CNN
+F 3 "" H 10500 1100 50  0001 C CNN
+F 4 "Keystone" H 0   0   50  0001 C CNN "Mfr"
+F 5 "1212-ST" H 0   0   50  0001 C CNN "MfrCode"
+F 6 "534-1212-ST" H 0   0   50  0001 C CNN "MouserCode"
 	1    10500 1100
 	1    0    0    -1  
 $EndComp
@@ -1085,7 +1097,10 @@ P 1150 1100
 F 0 "J2" H 1070 875 50  0000 C CNN
 F 1 "Conn_01x01" H 1070 966 50  0000 C CNN
 F 2 "c64-psu:spade_4.8mm" H 1150 1100 50  0001 C CNN
-F 3 "~" H 1150 1100 50  0001 C CNN
+F 3 "" H 1150 1100 50  0001 C CNN
+F 4 "Keystone" H 0   0   50  0001 C CNN "Mfr"
+F 5 "1212-ST" H 0   0   50  0001 C CNN "MfrCode"
+F 6 "534-1212-ST" H 0   0   50  0001 C CNN "MouserCode"
 	1    1150 1100
 	-1   0    0    1   
 $EndComp
@@ -1096,7 +1111,10 @@ P 1150 1600
 F 0 "J3" H 1070 1375 50  0000 C CNN
 F 1 "Conn_01x01" H 1070 1466 50  0000 C CNN
 F 2 "c64-psu:spade_4.8mm" H 1150 1600 50  0001 C CNN
-F 3 "~" H 1150 1600 50  0001 C CNN
+F 3 "" H 1150 1600 50  0001 C CNN
+F 4 "Keystone" H 0   0   50  0001 C CNN "Mfr"
+F 5 "1212-ST" H 0   0   50  0001 C CNN "MfrCode"
+F 6 "534-1212-ST" H 0   0   50  0001 C CNN "MouserCode"
 	1    1150 1600
 	-1   0    0    1   
 $EndComp
