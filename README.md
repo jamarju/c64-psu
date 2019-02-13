@@ -7,7 +7,7 @@ This is a compact and efficient 9VAC/5VDC power supply for the Commodore 64 with
 * 220VAC input (but easy to modify for 110VAC operation).
 * 5 VDC output, adjustable, 1.75A max.
 * 9 VAC output, 1.67A max.
-* >6.5 VDC overvoltage protection (latching).
+* 6.5 VDC overvoltage protection (latching).
 * Low VDC output ripple (<25 mV<sub>pp</sub> @1A).
 * 2A overcurrent protection.
 * Low heat dissipation.
@@ -80,6 +80,20 @@ Undervoltage protection voltage threshold set at Vin <= 6.81V via R3/R4 divider.
 
 ![](img/pok.png)
 
+## Enclosure
+
+![](img/enclosure.png)
+
+STLs and Fusion 360 project included in the enclosure/ folder. Sorry FreeCAD, I tried to keep this opensource but bodies in 0.17 are just not mature enough and doing this in 0.16 was too painful.
+
+For the enclosure, in addition to the BOM components, you'll need:
+
+* 6 x [Female quick disconnect 4.8 mm terminals](https://www.aliexpress.com/item/Free-shipping-100pcs-lot-4-8-insert-the-plug-spring-sheathed-wire-terminal-connector-cold-pressed/32593657279.html)
+* 6 x [PCB male quick disconnect (aka spade) 4.8mm terminals](https://www.aliexpress.com/item/100pcs-4-8-Inserts-Plug-Spring-Terminal-PCB-Solder-lug-type-thickness-0-8mm-two-legs/32707189841.html) (replace BOM's with these if you are feeling cheap)
+* 1 x [M12 PG7 strain relief](https://www.aliexpress.com/item/10pcs-Waterproof-M16-PG9-M12-PG7-Cable-Connectors-Spiral-Strain-Relief-Protector/32923675313.html)
+* 1 x [Panel mount AC socket + rocking switch + fuse](https://www.aliexpress.com/item/Power-Rocker-Switch-IEC-3-Pin-320-C14-Inlet-Power-Sockets-Switch-Connector-Plug-10A-250V/32802047471.html)
+* 1 x [4 cores, 5 meters 20 AWG cable](https://www.aliexpress.com/item/20-AWG-0-5MM2-RVV-2-3-4-5-6-7-8-10-12-14-16/32921926304.html)
+
 ## TODO
 
 * Actually test that this doesn't blow anything up. Tests should include at least:
@@ -87,3 +101,13 @@ Undervoltage protection voltage threshold set at Vin <= 6.81V via R3/R4 divider.
   * Undervoltage POK (both edges)
   * Secondary-primary noise coupling
   * EMI emissions
+
+## License
+
+CC-BY-NC-SA (Attribution-NonCommercial-ShareAlike).
+
+See LICENSE.txt for details.
+
+Please do not mass (?) produce this without my permission.
+
+![](img/Cc-by-nc-sa_icon.svg)
