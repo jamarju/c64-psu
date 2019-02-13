@@ -23,6 +23,8 @@ Output voltage can be adjusted in the [4.13V, 5.55V] range.
 
 ## Design details
 
+![](img/c64-psu-schematic.svg)
+
 This PSU uses a 9VAC, 30VA dual secondary (15 VA + 15 VA) transformer that provides up to 1.67 amps on each secondary.
 
 The regulator is a TI LMR33630 switching DC/DC step down converter, switching frequency ~400 KHz and a peak efficiency of 93%.
